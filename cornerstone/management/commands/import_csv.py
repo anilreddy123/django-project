@@ -34,15 +34,15 @@ class Command(BaseCommand):
 
                 #Adding parent
                 print "Updating Parent"
-                for row in rows:
-                    try:
-                        print"hello"
-                        user = CornerstoneUserProfile.objects.get(user_ID = row[1])
-                        print user
-                        parent = CornerstoneUserProfile.objects.get(user_ID = row[4])
-                        user.parent = parent
+            for row in rows:
+                try:
+                    print"hello"
+                    user = CornerstoneUserProfile.objects.get(user_ID = row[1])
+                    print user
+                    parent = CornerstoneUserProfile.objects.get(user_ID = row[4])
+                    user.parent = parent
 
-                        user.save()
-                    except:
-                        pass
-                print "parent updated Successfully"
+                    user.save()
+                except:
+                    pass
+                    print "parent updated Successfully"
