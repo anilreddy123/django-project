@@ -12,8 +12,8 @@
     {{ count }}
     {% recursetree nodes %}
         <li>
-             {{ node.First_Name}}
-             {{ node.Last_Name}}
+             {{ node.first_name}}
+             {{ node.last_name}}
             {% if not node.is_leaf_node %}
 
                 <ul class="children">

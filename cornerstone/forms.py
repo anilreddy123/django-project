@@ -6,4 +6,4 @@ from mptt.forms import TreeNodeChoiceField
 class CornerstoneUserProfileForm(forms.ModelForm):
     class Meta:
         model = CornerstoneUserProfile
-        fields = ['First_Name', 'Last_Name']
+        fields = ['first_name', 'last_name']
