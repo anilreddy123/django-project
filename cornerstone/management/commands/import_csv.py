@@ -26,7 +26,7 @@ class Command(BaseCommand):
             rows = csv.reader(f)
 
             # Skip the header row here
-            rows.next()
+            header = next(rows)
 
             for row in rows:
                 # Retrieve each row's value as a variable.
