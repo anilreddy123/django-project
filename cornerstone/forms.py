@@ -7,6 +7,5 @@ class CornerstoneUserProfileForm(forms.ModelForm):
     class Meta:
         model = CornerstoneUserProfile
         fields = ['first_name', 'last_name']
-
-
-        def 
+    
+    
