@@ -63,7 +63,7 @@ class Command(BaseCommand):
             rows = csv.reader(f)
 
             # Skip the header row here instead
-            rows.next()
+            header = next(rows)
 
             # Loop through each row and add the parent if it exists
             for row in rows:
